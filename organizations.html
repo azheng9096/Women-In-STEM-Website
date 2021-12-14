@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="navbar.css">
+        <style>
+            html, body{
+                height: 100%;
+            }
+            #heading{
+                background-blend-mode: multiply;
+                background-color: rgb(155, 155, 155);
+                background-image:
+                linear-gradient(45deg,       
+                    rgba(251, 202, 187, 0.6),
+                    rgba(249, 176, 195, 0.6),
+                    rgba(227, 171, 206, 0.6),
+                    rgba(206, 182, 217, 0.6),
+                    rgba(162, 200, 236, 0.6)),
+                url("https://alphasigmatau.org/wp-content/uploads/2019/07/Girls-Who-Code-Launch-Digital-Suite_WordPress-Featured-Image-scaled.jpg");
+                background-size: cover;
+                height: 90vh;
+                width: 100%;
+                text-align: center;
+            }
+        
+            #title{
+                font-family: 'Readex Pro', sans-serif;
+                color: white;
+                font-size: 50px;
+                text-align: center;
+                letter-spacing: 4px;
+            }
+
+            #sub{
+                color: white;
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            #name{
+                font-weight: 900;
+                color: white;
+                display: inline-block;
+                background-size: 120% 100%;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -moz-background-clip: text;
+                -moz-text-fill-color: transparent;
+                -ms-background-clip: text;
+                -ms-text-fill-color: transparent;
+                background-clip: text;
+
+                background-image:
+                linear-gradient(45deg,       
+                    rgba(251, 202, 187),
+                    rgba(249, 176, 195),
+                    rgba(227, 171, 206),
+                    rgba(206, 182, 217),
+                    rgba(162, 200, 236));
+            }
+
+            .field{
+                margin-bottom: 4em;
+            }
+
+            .fieldName{
+                font-family: 'Readex Pro', sans-serif;
+                font-size: 35px;
+                letter-spacing: 4px;
+                font-weight: 900;
+            }
+            .res{
+                margin-left: 2em;
+            }
+            .resType{
+                font-family: 'Readex Pro', sans-serif;
+                font-size: 20px;
+                letter-spacing: 4px;
+                font-weight: 900;
+                margin: 1em 0;
+            }
+            .resLinks{
+                font-family: 'Quattrocento Sans', sans-serif;
+                font-size: 15px;
+            }
+            .resLinks > li{
+                margin: 0.5em 0;
+            }
+
+        </style>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </head>
+    <body id=display>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="statistics.html">Statistics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feminism.html">STEM & Feminism</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            STEM Resources
+                        </a>
+                        <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="engineering.html">Engineering<span class="sr-only">(current)</span></a>
+                            <a class="dropdown-item" href="technology.html">Technology</a>
+                            <a class="dropdown-item" href="science.html">Science</a>
+                            <a class="dropdown-item" href="mathematics.html">Mathematics</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle _active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Contribute
+                        </a>
+                        <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item _active" href="organizations.html">Organizations</a>
+                            <a class="dropdown-item" href="local.html">Local Community</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="petitions.html">Petitions</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="heading" class="d-flex flex-column justify-content-center align-items-center">
+            <div id="title">
+                <span id="name">Women in STEM Organizations</span>
+            </div>
+            <div id="sub">
+                <p class="lead">A list of women in STEM organizations</p>
+                <p style="font-size: 10px; letter-spacing: 1px; color: rgba(255, 255, 255, 0.5);">
+                    Background Image Source: Carey Wagner/Alpha Sigma Tau
+                </p>
+            </div>
+        </div>
+
+        <div class="container" style="padding: 15vh 0;">
+
+            <div class="field">
+                <h1 class="fieldName">General</h1>
+                <div class="res">
+                    <h3 class="resType">Websites</h2>
+                    <ul class="resLinks">
+                        <li>
+                            <a href="https://www.aauw.org/">
+                                American Association of University Women (AAUW)
+                            </a>
+                            <br>
+                            Description: 
+                            "We've led the fight for fair pay and economic opportunity for women — 
+                            and the battle continues: Women still get just 83 cents for every dollar 
+                            paid to a man, and men continue to dominate the top roles and highest-paying professions."
+                            (American Association of University Women)
+                        </li>
+
+                        <li>
+                            <a href="https://www.awis.org/">
+                                Association for Women in Science (AWIS)
+                            </a>
+                            <br>
+                            Description: 
+                            "For individuals seeking equity for women in science, engineering, technology and math, 
+                            AWIS provides career development, networking, mentorship, and leadership opportunities. 
+                            In addition, our thought leadership, research, and advocacy benefit all women in science."
+                            (Association for Women in Science)
+                        </li>
+
+                        <li>
+                            <a href="https://owsd.net/">
+                                Organization for Women in Science for the Developing World (OWSD)
+                            </a>
+                            <br>
+                            Description: 
+                            "OWSD is the first international forum to unite eminent women scientists from the developing and developed 
+                            worlds with the objective of strengthening their role in the development process and promoting their 
+                            representation in scientific and technological leadership.
+                            OWSD provides research training, career development and networking opportunities for women scientists 
+                            throughout the developing world at different stages in their careers."
+                            (Organization for Women in Science for the Developing World)
+                        </li>
+
+                        <li>
+                            <a href="https://womeninstem.org/">
+                                Women in STEM
+                            </a>
+                            <br>
+                            Description: 
+                            "The gender disparity in STEM fields has been widely recognized, but few initiatives have been established 
+                            at a younger age when girls decide what they want to pursue. We aim to empower and inspire girls through 
+                            offering a variety of opportunities at the high school level. We hope that through this program, 
+                            not only will there be an increased awareness of women's potential, but also that girls will be able to 
+                            recognize their own."
+                            (Women in STEM)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="field">
+                <h1 class="fieldName">Engineering</h1>
+                <div class="res">
+                    <h3 class="resType">Websites</h2>
+                    <ul class="resLinks">
+                        <li>
+                            <a href="https://www.ieee.org/">
+                                IEEE Women in Engineering (WIE)
+                            </a>
+                            <br>
+                            Description: 
+                            "IEEE's core purpose is to foster technological innovation and excellence for the benefit of humanity."
+                            (IEEE Women in Engineering)
+                        </li>
+
+                        <li>
+                            <a href="https://swe.org/">
+                                Society of Women Engineers (SWE)
+                            </a>
+                            <br>
+                            Description: 
+                            "Empower women to achieve their full potential in careers as engineers and leaders; expand the image 
+                            of the engineering and technology professions as a positive force in improving the quality of life, 
+                            and demonstrate the value of diversity and inclusion."
+                            (Society of Women Engineers)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="field">
+                <h1 class="fieldName">Technology/Programming</h1>
+                <div class="res">
+                    <h3 class="resType">Websites</h2>
+                    <ul class="resLinks">
+                        <li>
+                            <a href="https://www.blackgirlscode.com/">
+                                Black Girls CODE (BGC)
+                            </a>
+                            <br>
+                            Description: 
+                            "We build pathways for young women of color to embrace the current tech marketplace as builders and creators by 
+                            introducing them to skills in computer programming and technology.
+
+                            Radical action is needed if we are to close the opportunity gap for Black women and girls. 
+                            We lead a global movement to establish equal representation in the tech sector. 
+                            Black Girls CODE is devoted to showing the world that Black girls can code and do so much more. 
+                            Together, we are creating stronger economies and more equitable societies—ultimately 
+                            realizing the true potential of democracy through diversity and inclusion."
+                            (Black Girls CODE)
+                        </li>
+
+                        <li>
+                            <a href="https://girlswhocode.com/">
+                                Girls Who Code
+                            </a>
+                            <br>
+                            Description: 
+                            "Girls Who Code is on a mission to close the gender gap in technology and to change the 
+                            image of what a programmer looks like and does."
+                            (Girls Who Code)
+                        </li>
+
+                        <li>
+                            <a href="https://ncwit.org/">
+                                National Center for Women & Information Technology (NCWIT)
+                            </a>
+                            <br>
+                            Description: 
+                            "Powered by the latest social science research, this community works to increase the meaningful and influential 
+                            participation of all girls and women in computing—at the intersections of race/ethnicity, class, age, gender identity, 
+                            sexual orientation, disability status, and other historically marginalized identities—from K-12 through career."
+                            (National Center for Women & Information Technology)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="field">
+                <h1 class="fieldName">Science</h1>
+                <div class="res">
+                    <h3 class="resType">Websites</h2>
+                    <ul class="resLinks">
+                        <li>
+                            <a href="http://www.awg.org/">
+                                Association for Women Geoscientists (AWG)
+                            </a>
+                            <br>
+                            Description: 
+                            "The Association for Women Geoscientists is an international organization devoted to enhancing the 
+                            quality and level of participation of women in geosciences and to introduce girls and young women to geoscience careers. 
+                            Membership is open to anyone who supports AWG's goals."
+                            (Association for Women Geoscientists)
+                        </li>
+
+                        <li>
+                            <a href="https://www.amwa-doc.org/">
+                                American Medical Women's Association (AMWA)
+                            </a>
+                            <br>
+                            Description: 
+                            "To advance women in medicine, advocate for equity, and ensure excellence in health care."
+                            (American Medical Women's Association)
+                        </li>
+
+                        <li>
+                            <a href="https://www.gwis.org/default.aspx">
+                                Graduate Women in Science (GWIS)
+                            </a>
+                            <br>
+                            Description: 
+                            "Our mission is simple: to build a global community that inspires, supports, recognizes, and empowers women in science. 
+                            We accomplish that mission by staying true to our three guiding principles: Connect, Lead, and Empower."
+                            (Graduate Women in Science)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="field">
+                <h1 class="fieldName">Mathematics</h1>
+                <div class="res">
+                    <h3 class="resType">Websites</h2>
+                    <ul class="resLinks">
+                        <li>
+                            <a href="https://awm-math.org/">
+                                Association for Women in Mathematics (AWM)
+                            </a>
+                            <br>
+                            Description: 
+                            "The Association for Women in Mathematics (AWM) is firmly committed to fostering an inclusive 
+                            environment that enables a diverse community to be involved in and contribute to AWM activities. 
+                            The AWM believes that all people with an interest in mathematics should be supported and encouraged 
+                            to participate in the profession. Any type of underrepresentation is a problem for the entire 
+                            mathematical community: it inevitably leads to missed opportunities and the loss of mathematical 
+                            talent. Thus, the AWM strongly endorses the National Science Foundation's goal of 
+                            'broadening participation' in order to 'increase participation from underrepresented groups' 
+                            in the mathematical sciences (See the NSF's Women, Minorities, and Persons with Disabilities in 
+                            Science and Engineering for a description of these groups). It is AWM's goal to celebrate, 
+                            recognize and support a diverse mathematical community of individuals from across the spectrum of age, 
+                            race, gender, gender identity and expression, national or ethnic origin, religion and religious belief, 
+                            marital status, parental status, body shape or size, sexual orientation, physical ability, socioeconomic 
+                            status, employment status and other aspects of diversity."
+                            (Association for Women in Mathematics (AWM))
+                        </li>
+                        <li>
+                            <a href="https://jcwmath.wordpress.com/">
+                                Joint Committee on Women in the Mathematical Sciences (JCW-Math)
+                            </a>
+                            <br>
+                            Description: 
+                            "The Joint Committee on Women serves primarily as a forum for communication among member organizations about the ways in 
+                            which each organization enhances opportunities for women in the mathematical and statistical sciences. 
+                            JCW disseminates information about effective mechanisms and best practices for these enhancements through media such as its website, 
+                            society publications, and presentations at meetings of the member societies. 
+                            The Committee also may recommend actions to the governing bodies of the member societies in support of these opportunities."
+                            (Joint Committee on Women in the Mathematical Sciences)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="navbar.css">
+        <style>
+            html, body{
+                height: 100%;
+            }
+            #heading{
+                background-blend-mode: multiply;
+                background-color: rgb(105, 105, 105);
+                background-image:
+                linear-gradient(45deg,       
+                    rgba(251, 202, 187, 0.6),
+                    rgba(249, 176, 195, 0.6),
+                    rgba(227, 171, 206, 0.6),
+                    rgba(206, 182, 217, 0.6),
+                    rgba(162, 200, 236, 0.6)),
+                url("https://images.alphacoders.com/478/thumb-1920-478518.jpg");
+                background-size: cover;
+                height: 90vh;
+                width: 100%;
+                text-align: center;
+            }
+        
+            #title{
+                font-family: 'Readex Pro', sans-serif;
+                color: white;
+                font-size: 50px;
+                text-align: center;
+                letter-spacing: 4px;
+            }
+
+            #sub{
+                color: white;
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            #name{
+                font-weight: 900;
+                color: white;
+                display: inline-block;
+                background-size: 120% 100%;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -moz-background-clip: text;
+                -moz-text-fill-color: transparent;
+                -ms-background-clip: text;
+                -ms-text-fill-color: transparent;
+                background-clip: text;
+
+                background-image:
+                linear-gradient(45deg,       
+                    rgba(251, 202, 187),
+                    rgba(249, 176, 195),
+                    rgba(227, 171, 206),
+                    rgba(206, 182, 217),
+                    rgba(162, 200, 236));
+            }
+
+            .field{
+                margin-bottom: 4em;
+            }
+
+            .fieldName{
+                font-family: 'Readex Pro', sans-serif;
+                font-size: 35px;
+                letter-spacing: 4px;
+                font-weight: 900;
+            }
+            .res{
+                margin-left: 2em;
+            }
+            .resType{
+                font-family: 'Readex Pro', sans-serif;
+                font-size: 20px;
+                letter-spacing: 4px;
+                font-weight: 900;
+                margin: 1em 0;
+            }
+            .resLinks{
+                font-family: 'Quattrocento Sans', sans-serif;
+                font-size: 15px;
+            }
+            .resLinks > li{
+                margin: 0.5em 0;
+            }
+
+        </style>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </head>
+    <body id=display>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="statistics.html">Statistics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feminism.html">STEM & Feminism</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle _active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            STEM Resources
+                        </a>
+                        <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="engineering.html">Engineering<span class="sr-only">(current)</span></a>
+                            <a class="dropdown-item" href="technology.html">Technology</a>
+                            <a class="dropdown-item" href="science.html">Science</a>
+                            <a class="dropdown-item _active" href="mathematics.html">Mathematics</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Contribute
+                        </a>
+                        <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="organizations.html">Organizations</a>
+                            <a class="dropdown-item" href="local.html">Local Community</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="petitions.html">Petitions</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="heading" class="d-flex flex-column justify-content-center align-items-center">
+            <div id="title">
+                <span id="name">Mathematics Resources</span>
+            </div>
+            <div id="sub">
+                <p class="lead">A repository of resources for learning topics in mathematics</p>
+                <p style="font-size: 10px; letter-spacing: 1px; color: rgba(255, 255, 255, 0.5);">
+                    Background Image Source: Alpha Coders
+                </p>
+            </div>
+        </div>
+
+        <div class="container" style="padding: 15vh 0;">
+
+            <div class="field">
+                <h1 class="fieldName">General Mathematics</h1>
+                <div class="res">
+                    <h3 class="resType">Websites</h2>
+                    <ul class="resLinks">
+                        <li>
+                            <a href="https://mathworld.wolfram.com/">
+                                Mathworld Wolfram
+                            </a>
+                            <br>
+                            Online text-based resource for mathematics.
+                        </li>
+                    </ul>
+
+                    <h3 class="resType">Forum</h2>
+                    <ul class="resLinks">
+                        <li>
+                            <a href="https://math.stackexchange.com/">
+                                Mathematics Stack Exchange
+                            </a>
+                            <br>
+                            Questions and answer online forum for mathematics.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="field">
+                <h1 class="fieldName">Calculus</h1>
+                <div class="res">
+                    <h3 class="resType">Websites</h2>
+                    <ul class="resLinks">
+                        <li>
+                            <a href="https://mathworld.wolfram.com/topics/CalculusandAnalysis.html">
+                                Wolfram (Calculus and Analysis)
+                            </a>
+                            <br>
+                            Online text-based resource for calculus and analysis.
+                        </li>
+
+                        <li>
+                            <a href="https://openstax.org/details/books/calculus-volume-1">
+                                OpenStax (Calculus Volume 1)
+                            </a>
+                            <br>
+                            Online textbook (Calculus Volume 1)
+                        </li>
+
+                        <li>
+                            <a href="https://openstax.org/details/books/calculus-volume-2">
+                                OpenStax (Calculus Volume 2)
+                            </a>
+                            <br>
+                            Online textbook (Calculus Volume 2)
+                        </li>
+                    </ul>
+                
+                    <h3 class="resType">Video</h2>
+                    <ul class="resLinks">
+                        <li>
+                            <a href="https://www.youtube.com/playlist?list=PL0o_zxa4K1BWYThyV4T2Allw6zY0jEumv">
+                                The Organic Chemistry Tutor (Calculus)
+                            </a>
+                            <br>
+                            Playlist of The Organic Chemistry Tutor Calculus tutorial videos.
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=fYyARMqiaag&list=PLF797E961509B4EB5">
+                                Professor Leonard (Calculus 1)
+                            </a>
+                            <br>
+                            Playlist of Professor Leonard Calculus 1 lecture videos.
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=H9eCT6f_Ftw&list=PLDesaqWTN6EQ2J4vgsN1HyBeRADEh4Cw-">
+                                Professor Leonard (Calculus 2)
+                            </a>
+                            <br>
+                            Playlist of Professor Leonard Calculus 2 lecture videos.
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=tGVnBAHLApA&list=PLDesaqWTN6ESk16YRmzuJ8f6-rnuy0Ry7">
+                                Professor Leonard (Calculus 3)
+                            </a>
+                            <br>
+                            Playlist of Professor Leonard Calculus 3 lecture videos.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="field">
+                <h1 class="fieldName">Geometry</h1>
+                <div class="res">
+                    <h3 class="resType">Websites</h2>
+                    <ul class="resLinks">
+                        <li>
+                            <a href="https://mathworld.wolfram.com/topics/Geometry.html">
+                                Wolfram (Geometry)
+                            </a>
+                            <br>
+                            Online text-based resource for geometry.
+                        </li>
+                        <li>
+                            <a href="https://mathsisfun.com/geometry/index.html">
+                                Math is Fun
+                            </a>
+                            <br>
+                            Covers various topics in geometry (in simple terms) and has tools to help with understanding the topics.
+                        </li>
+                    </ul>
+
+                    <h3 class="resType">Video</h2>
+                    <ul class="resLinks">
+                        <li>
+                            <a href="https://www.youtube.com/playlist?list=PL0o_zxa4K1BVkRxCZubMPcCJ5Q5QwZdEM">
+                                The Organic Chemistry Tutor (Geometry)
+                            </a>
+                            <br>
+                            Playlist of The Organic Chemistry Tutor Geometry tutorial videos.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="field">
+                <h1 class="fieldName">Statistics</h1>
+                <div class="res">
+                    <h3 class="resType">Websites</h2>
+                    <ul class="resLinks">
+                        <li>
+                            <a href="https://mathworld.wolfram.com/topics/ProbabilityandStatistics.html">
+                                Wolfram (Probability and Statistics)
+                            </a>
+                            <br>
+                            Online text-based resource for probability and statistics.
+                        </li>
+                        <li>
+                            <a href="https://openstax.org/details/books/introductory-statistics">
+                                OpenStax (Introductory Statistics)
+                            </a>
+                            <br>
+                            Online textbook (Introductory Statistics).
+                        </li>
+                    </ul>
+                    
+                    <h3 class="resType">Video</h2>
+                    <ul class="resLinks">
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=9FtHB7V14Fo&list=PL5102DFDC6790F3D0">
+                                Professor Leonard (Statistics)
+                            </a>
+                            <br>
+                            Playlist of Professor Leonard Statistics lecture videos.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

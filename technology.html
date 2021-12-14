@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="navbar.css">
+        <style>
+            html, body{
+                height: 100%;
+            }
+            #heading{
+                background-blend-mode: multiply;
+                background-color: rgb(155, 155, 155);
+                background-image:
+                linear-gradient(45deg,       
+                    rgba(251, 202, 187, 0.6),
+                    rgba(249, 176, 195, 0.6),
+                    rgba(227, 171, 206, 0.6),
+                    rgba(206, 182, 217, 0.6),
+                    rgba(162, 200, 236, 0.6)),
+                url("https://www.itprotoday.com/sites/itprotoday.com/files/styles/article_featured_retina/public/CICD%20processes.jpg");
+                background-size: cover;
+                height: 90vh;
+                width: 100%;
+                text-align: center;
+            }
+        
+            #title{
+                font-family: 'Readex Pro', sans-serif;
+                color: white;
+                font-size: 50px;
+                text-align: center;
+                letter-spacing: 4px;
+            }
+
+            #sub{
+                color: white;
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            #name{
+                font-weight: 900;
+                color: white;
+                display: inline-block;
+                background-size: 120% 100%;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -moz-background-clip: text;
+                -moz-text-fill-color: transparent;
+                -ms-background-clip: text;
+                -ms-text-fill-color: transparent;
+                background-clip: text;
+
+                background-image:
+                linear-gradient(45deg,       
+                    rgba(251, 202, 187),
+                    rgba(249, 176, 195),
+                    rgba(227, 171, 206),
+                    rgba(206, 182, 217),
+                    rgba(162, 200, 236));
+            }
+
+            .field{
+                margin-bottom: 4em;
+            }
+
+            .fieldName{
+                font-family: 'Readex Pro', sans-serif;
+                font-size: 35px;
+                letter-spacing: 4px;
+                font-weight: 900;
+            }
+            .res{
+                margin-left: 2em;
+            }
+            .resType{
+                font-family: 'Readex Pro', sans-serif;
+                font-size: 20px;
+                letter-spacing: 4px;
+                font-weight: 900;
+                margin: 1em 0;
+            }
+            .resLinks{
+                font-family: 'Quattrocento Sans', sans-serif;
+                font-size: 15px;
+            }
+            .resLinks > li{
+                margin: 0.5em 0;
+            }
+
+        </style>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </head>
+    <body id=display>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="statistics.html">Statistics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feminism.html">STEM & Feminism</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle _active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            STEM Resources
+                        </a>
+                        <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="engineering.html">Engineering<span class="sr-only">(current)</span></a>
+                            <a class="dropdown-item _active" href="technology.html">Technology</a>
+                            <a class="dropdown-item" href="science.html">Science</a>
+                            <a class="dropdown-item" href="mathematics.html">Mathematics</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Contribute
+                        </a>
+                        <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="organizations.html">Organizations</a>
+                            <a class="dropdown-item" href="local.html">Local Community</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="petitions.html">Petitions</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="heading" class="d-flex flex-column justify-content-center align-items-center">
+            <div id="title">
+                <span id="name">Technology Resources</span>
+            </div>
+            <div id="sub">
+                <p class="lead">A repository of resources for learning various topics in computer science</p>
+                <p style="font-size: 10px; letter-spacing: 1px; color: rgba(255, 255, 255, 0.5);">
+                    Background Image Source: Andrey Suslov/Shutterstock
+                </p>
+            </div>
+        </div>
+
+        <div class="container" style="padding: 15vh 0;">
+
+            <div class="field">
+                <h1 class="fieldName">Programming</h1>
+                <div class="res">
+                    <h3 class="resType">Websites</h2>
+                    <ul class="resLinks">
+                        <li>
+                            <a href="https://www.geeksforgeeks.org/">
+                                GeeksForGeeks
+                            </a>
+                            <br>
+                            Provides online web tutorials for Python, C++, and Java (and a lot more).
+                        </li>
+
+                        <li>
+                            <a href="https://www.w3schools.com/">
+                                W3Schools
+                            </a>
+                            <br>
+                            Provides online web tutorials for Python, C++, C#, Ruby, Kotlin, Go, Java, and JavaScript (and a lot more).
+                        </li>
+
+                        <li>
+                            <a href="https://www.tutorialspoint.com/index.htm">
+                                Tutorialspoint
+                            </a>
+                            <br>
+                            Provides online web tutorials for Python, C++, C#, Java, and Scala (and a lot more). 
+                            Note that the free tutorials can be found in the "Tutorials Library" section.
+                        </li>
+                    </ul>
+                
+                    <h3 class="resType">Video</h2>
+                    <ul class="resLinks">
+                        <li>
+                            <a href="https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ">
+                                FreeCodeCamp
+                            </a>
+                            <br>
+                            Full course tutorials for various programming languages (and others).
+                        </li>
+
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCxX9wt5FWQUAAz4UrysqK9A">
+                                CSDojo
+                            </a>
+                            <br>
+                            Tutorials videos for various programming languages (and more).
+                        </li>
+                    </ul>
+                    
+                    <h3 class="resType">Documentations</h2>
+                    <ul class="resLinks">
+                        <li>
+                            <a href="https://docs.python.org/3/">
+                                Python
+                            </a>
+                            <br>
+                            Official documentation for Python.
+                        </li>
+
+                        <li>
+                            <a href="https://docs.microsoft.com/en-us/cpp/?view=msvc-170">
+                                Microsoft C++, C, and Assembler documentation
+                            </a>
+                            <br>
+                            Official documentation for C++, C, and assembly language.
+                        </li>
+
+                        <li>
+                            <a href="https://docs.oracle.com/javase/7/docs/api/">
+                                Java 7 documentation
+                            </a>
+                            <br>
+                            Official documentation for Java 7.
+                        </li>
+                    </ul>
+
+                    <h3 class="resType">Forum</h2>
+                    <ul class="resLinks">
+                        <li>
+                            <a href="https://stackoverflow.com/">
+                                Stack Overflow
+                            </a>
+                            <br>
+                            Questions and answer online forum for programming.
+                        </li>
+
+                        <li>
+                            <a href="https://cs.stackexchange.com/">
+                                Computer Science Stack Exchange
+                            </a>
+                            <br>
+                            Questions and answer online forum for computer science.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="field">
+                <h1 class="fieldName">Data Structures and Algorithms</h1>
+                <div class="res">
+                    <h3 class="resType">Websites</h2>
+                    <ul class="resLinks">
+                        <li>
+                            <a href="https://www.geeksforgeeks.org/fundamentals-of-algorithms/?ref=shm">
+                                GeeksForGeeks (Algorithms)
+                            </a>
+                            <br>
+                            Provides explanation and implementation of various algorithms, as well as practice 
+                            problems and other resources.
+                        </li>
+
+                        <li>
+                            <a href="https://www.geeksforgeeks.org/data-structures/?ref=shm">
+                                GeeksForGeeks (Data Structures)
+                            </a>
+                            <br>
+                            Provides explanation and implementation of various data structures, as well as practice 
+                            problems and other resources.
+                        </li>
+
+                        <li>
+                            <a href="https://www.tutorialspoint.com/data_structures_algorithms/index.htm">
+                                Tutorialspoint (Data Structures and Algorithms)
+                            </a>
+                            <br>
+                            Provides explanation of various data structures and algoirhtms.
+                        </li>
+                    </ul>
+
+                    <h3 class="resType">Video</h2>
+                        <ul class="resLinks">
+                            <li>
+                                <a href="https://www.geeksforgeeks.org/fundamentals-of-algorithms/?ref=shm">
+                                    GeeksForGeeks (Algorithms)
+                                </a>
+                                <br>
+                                Provides explanation and implementation of various algorithms, as well as practice 
+                                problems and other resources.
+                            </li>
+    
+                            <li>
+                                <a href="https://www.youtube.com/playlist?list=PLBZBJbE_rGRV8D7XZ08LK6z-4zPoWzu5H">
+                                    CSDojo
+                                </a>
+                                <br>
+                                Playlist of CSDojo Data Structures and Algorithms tutorial videos.
+                            </li>
+                        </ul>
+                </div>
+            </div>
+
+            <div class="field">
+                <h1 class="fieldName">Computer Architecture</h1>
+                <div class="res">
+                    <h3 class="resType">Websites</h2>
+                    <ul class="resLinks">
+                        <li>
+                            <a href="https://www.geeksforgeeks.org/computer-organization-and-architecture-tutorials/">
+                                GeeksForGeeks (Computer Organization and Architecture)
+                            </a>
+                            <br>
+                            Provides explanation of various computer organiztion and architecture concepts, 
+                            as well as other related resources.
+                        </li>
+                        <li>
+                            <a href="https://www.coursera.org/learn/comparch">
+                                Coursera Computer Architecture
+                            </a>
+                            <br>
+                            Online course on Computer Architecture offered by Princeton University.
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

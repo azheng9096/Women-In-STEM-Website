@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="navbar.css">
+        <style>
+            html, body{
+                height: 100%;
+            }
+            #heading{
+                background-blend-mode: multiply;
+                background-color: rgb(155, 155, 155);
+                background-image:
+                linear-gradient(45deg,       
+                    rgba(251, 202, 187, 0.6),
+                    rgba(249, 176, 195, 0.6),
+                    rgba(227, 171, 206, 0.6),
+                    rgba(206, 182, 217, 0.6),
+                    rgba(162, 200, 236, 0.6)),
+                url("https://miro.medium.com/max/2625/1*ccokpGxLT-B8n-LqyEpHsQ.png");
+                background-size: cover;
+                height: 90vh;
+                width: 100%;
+                text-align: center;
+            }
+        
+            #title{
+                font-family: 'Readex Pro', sans-serif;
+                color: white;
+                font-size: 50px;
+                text-align: center;
+                letter-spacing: 4px;
+            }
+
+            #sub{
+                color: white;
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            #name{
+                font-weight: 900;
+                color: white;
+                display: inline-block;
+                background-size: 120% 100%;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -moz-background-clip: text;
+                -moz-text-fill-color: transparent;
+                -ms-background-clip: text;
+                -ms-text-fill-color: transparent;
+                background-clip: text;
+
+                background-image:
+                linear-gradient(45deg,       
+                    rgba(251, 202, 187),
+                    rgba(249, 176, 195),
+                    rgba(227, 171, 206),
+                    rgba(206, 182, 217),
+                    rgba(162, 200, 236));
+            }
+
+            .field{
+                margin-bottom: 4em;
+            }
+
+            .fieldName{
+                font-family: 'Readex Pro', sans-serif;
+                font-size: 35px;
+                letter-spacing: 4px;
+                font-weight: 900;
+            }
+            .res{
+                margin-left: 2em;
+            }
+            .resType{
+                font-family: 'Readex Pro', sans-serif;
+                font-size: 20px;
+                letter-spacing: 4px;
+                font-weight: 900;
+                margin: 1em 0;
+            }
+            .resLinks{
+                font-family: 'Quattrocento Sans', sans-serif;
+                font-size: 15px;
+            }
+            .resLinks > li{
+                margin: 0.5em 0;
+            }
+
+        </style>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </head>
+    <body id=display>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="statistics.html">Statistics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feminism.html">STEM & Feminism</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle _active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            STEM Resources
+                        </a>
+                        <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item _active" href="engineering.html">Engineering<span class="sr-only">(current)</span></a>
+                            <a class="dropdown-item" href="technology.html">Technology</a>
+                            <a class="dropdown-item" href="science.html">Science</a>
+                            <a class="dropdown-item" href="mathematics.html">Mathematics</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Contribute
+                        </a>
+                        <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="organizations.html">Organizations</a>
+                            <a class="dropdown-item" href="local.html">Local Community</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="petitions.html">Petitions</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="heading" class="d-flex flex-column justify-content-center align-items-center">
+            <div id="title">
+                <span id="name">Engineering Resources</span>
+            </div>
+            <div id="sub">
+                <p class="lead">A repository of resources for learning topics in various engineering fields</p>
+                <p style="font-size: 10px; letter-spacing: 1px; color: rgba(255, 255, 255, 0.5);">
+                    Background Image Source: elenabsl/Shutterstock
+                </p>
+            </div>
+        </div>
+
+        <div class="container" style="padding: 15vh 0;">
+
+            <div class="field">
+                <h1 class="fieldName">General Engineering</h1>
+                <div class="res">
+                    <h3 class="resType">Forum</h2>
+                    <ul class="resLinks">
+                        <li>
+                            <a href="https://engineering.stackexchange.com/">
+                                Engineering Stack Exchange
+                            </a>
+                            <br>
+                            Questions and answer online forum for engineering.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="field">
+                <h1 class="fieldName">Chemical Engineering</h1>
+                <div class="res">
+                    <h3 class="resType">Websites</h2>
+                    <ul class="resLinks">
+                        <li>
+                            <a href="https://chembugs.files.wordpress.com/2015/12/perrys-chemical-engineering-handbook1.pdf">
+                                Perry's Chemical Engineering Handbook
+                            </a>
+                            <br>
+                            Online textbook (Perry's Chemical Engineering Handbook).
+                        </li>
+                        <li>
+                            <a href="http://www.bgstructuralengineering.com/">
+                                LearnChemE
+                            </a>
+                            <br>
+                            Includes various resources (screencasts, self-study modules, interactive simulations, etc...) 
+                            for chemical engineering.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="field">
+                <h1 class="fieldName">Civil Engineering</h1>
+                <div class="res">
+                    <h3 class="resType">Websites</h2>
+                        <ul class="resLinks">
+                            <li>
+                                <a href="http://www.bgstructuralengineering.com/">
+                                    A Beginner's Guide to Structural Engineering by T. Bart Quimby, P.E., Ph.D., F.ASCE
+                                </a>
+                                <br>
+                                Online manual covering introductory topics in structural engineering.
+                            </li>
+                        </ul>
+
+                    <h3 class="resType">Videos</h2>
+                    <ul class="resLinks">
+                        <li>
+                            <a href="https://www.youtube.com/c/autocad/featured">
+                                AutoCAD Youtube Channel
+                            </a>
+                            <br>
+                            Official tutorial videos and informational videos on the AutoCAD software.
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UC17rnDjAIowh68LIGcaeL9A">
+                                CAD in Black Youtube Channel
+                            </a>
+                            <br>
+                            Tutorial videos on learning to use Revit and AutoCAD softwares.
+                        </li>
+                        <li>
+                            <a href="https://www.ice.org.uk/eventarchive?online=true&disciplines=7&_=1542131666409">
+                                ICE Events Archive
+                            </a>
+                            <br>
+                            Recorded civil engineering lectures and webinars.
+                        </li>
+                    </ul>
+                    
+                    <h3 class="resType">Softwares</h2>
+                    <ul class="resLinks">
+                        <li>
+                            <a href="https://www.autodesk.com/">
+                                Autodesk Products
+                            </a>
+                            <br>
+                            Note that they are free for educational purposes - requires an educational account.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="field">
+                <h1 class="fieldName">Electrical Engineering</h1>
+                <div class="res">
+                    <h3 class="resType">Websites</h2>
+                    <ul class="resLinks">
+                        <li>
+                            <a href="https://www.electrical4u.com/">
+                                Electrical 4 U
+                            </a>
+                            <br>
+                            Articles on various topics in electrical engineering.
+                        </li>
+
+                        <li>
+                            <a href="https://www.circuitlab.com/ ">
+                                Cicuit Lab
+                            </a>
+                            <br>
+                            Build and simulate circuits in your online browser. Online textbook for electrical engineering. 
+                            Also has an online forum for questions and answer for the Circuit Lab community.
+                        </li>
+                    </ul>
+
+                    <h3 class="resType">Forum</h2>
+                    <ul class="resLinks">
+                        <li>
+                            <a href="https://electronics.stackexchange.com/">
+                                Electrical Engineering Stack Exchange
+                            </a>
+                            <br>
+                            Questions and answer online forum for electrical engineering.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="field">
+                <h1 class="fieldName">Mechanical Engineering</h1>
+                <div class="res">
+                    <h3 class="resType">Websites</h2>
+                    <ul class="resLinks">
+                        <li>
+                            <a href="https://learnmech.com/ ">
+                                Learn Mechanical Engineering
+                            </a>
+                            <br>
+                            Online notes and projects for mechanical engineering.
+                        </li>
+                    </ul>
+
+                    <h3 class="resType">Video</h2>
+                    <ul class="resLinks">
+                        <li>
+                            <a href="https://www.youtube.com/channel/UC56czEa9fgGKCHV-Lz-RZUQ/featured">
+                                Randall Manteufel
+                            </a>
+                            <br>
+                            Lecture videos on various topics in mechanical engineering.
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/playlist?list=PLX2gX-ftPVXUjkEEXJoC0mx8mxTlfqpCn">
+                                Michel van Biezen (Mechanical Engineering 1 - Equilibrium)
+                            </a>
+                            <br>
+                            Playlist of Michel van Biezen Mechanical Engineering 1 - Equilibrium lecture videos.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

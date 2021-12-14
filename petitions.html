@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="navbar.css">
+        <style>
+            html, body{
+                height: 100%;
+            }
+            #heading{
+                /*background-blend-mode: multiply;
+                background-color: rgb(155, 155, 155);*/
+                background-image:
+                linear-gradient(45deg,       
+                    rgba(133, 89, 136, 0.7),
+                    rgba(107, 73, 132, 0.8),
+                    rgb(71, 52, 117, 0.9),
+                    rgba(43, 47, 119, 0.975),
+                    rgb(20, 24, 82, 1),
+                    rgb(7, 11, 52, 1)),
+                url("https://cdn2.mhpbooks.com/2015/10/Argonne_lab_education.jpg");
+                background-size: cover;
+                height: 100vh;
+                width: 100%;
+                text-align: center;
+            }
+        
+            #title{
+                font-family: 'Readex Pro', sans-serif;
+                color: white;
+                font-size: 50px;
+                text-align: center;
+                letter-spacing: 4px;
+            }
+
+            #sub{
+                color: white;
+                text-align: center;
+                margin-top: 20px;
+                margin-right: 7.5%;
+            }
+
+            #name{
+                font-weight: 900;
+                color: white;
+                display: inline-block;
+                background-size: 120% 100%;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -moz-background-clip: text;
+                -moz-text-fill-color: transparent;
+                -ms-background-clip: text;
+                -ms-text-fill-color: transparent;
+                background-clip: text;
+
+                background-image:
+                linear-gradient(45deg,       
+                    rgba(251, 202, 187),
+                    rgba(249, 176, 195),
+                    rgba(227, 171, 206),
+                    rgba(206, 182, 217),
+                    rgba(162, 200, 236));
+            }
+
+            .field{
+                margin-bottom: 4em;
+            }
+
+            .fieldName{
+                font-family: 'Readex Pro', sans-serif;
+                font-size: 35px;
+                letter-spacing: 4px;
+                font-weight: 900;
+            }
+
+            .resLinks{
+                font-family: 'Quattrocento Sans', sans-serif;
+                text-align: left;
+            }
+            .resLinks > li{
+                margin: 1em 0;
+                list-style-type: none;
+                font-size: 15px;
+            }
+
+            .resLinks > li > a{
+                font-family: 'Readex Pro', sans-serif;
+                font-weight: 600;
+                font-size: 22px;
+            }
+
+        </style>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </head>
+    <body id=display>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="statistics.html">Statistics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feminism.html">STEM & Feminism</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            STEM Resources
+                        </a>
+                        <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="engineering.html">Engineering<span class="sr-only">(current)</span></a>
+                            <a class="dropdown-item" href="technology.html">Technology</a>
+                            <a class="dropdown-item" href="science.html">Science</a>
+                            <a class="dropdown-item" href="mathematics.html">Mathematics</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle _active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Contribute
+                        </a>
+                        <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="organizations.html">Organizations</a>
+                            <a class="dropdown-item" href="local.html">Local Community</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item _active" href="petitions.html">Petitions</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="heading" class="d-flex justify-content-center align-items-center">
+            <div id="title" class="col">
+                <span id="name">Petitions</span>
+                <p style="font-size: 10px; letter-spacing: 1px; color: rgba(255, 255, 255, 0.5);">
+                    Background Image Source: Argonne National Laboratory/Wikimedia
+                </p>
+            </div>
+            <div id="sub" class="col">
+                <!--<p class="lead"></p>-->
+                <ul class="resLinks">
+                    <li>
+                        <a href="https://www.change.org/p/stem-courses-must-teach-more-about-contributions-of-women-in-the-field">
+                            STEM Courses Must Teach More About Contributions of Women in the Field
+                        </a>
+                        <br>
+                        Sent to NSW Education Standards Authority (NESA) Lyndall Foster. 
+                        Calling to increase representation of women in STEM curriculum.
+                    </li>
+
+                    <li>
+                        <a href="chng.it/MRYZ7sL2">
+                            Fund women in STEM equitably
+                        </a>
+                        <br>
+                        Support for an overhaul in the distribution of NHMRC funding
+                    </li>
+
+                    <li>
+                        <a href="https://www.change.org/p/charles-k-zercher-interim-dean-of-unh-s-college-of-engineering-and-physical-sciences-petition-to-calling-for-the-termination-of-craig-chapman">
+                            Petition to Calling for the Termination of Craig Chapman
+                        </a>
+                        <br>
+                        Sent to Charles K. Zercher (Interim Dean of UNH's College of Engineering and Physical Sciences).
+                        Calling for the termination of Assistant Professor Craig Chapman, who diguised as "a female, 
+                        academic scientist of color" to promote sexist, racist, and albeist hate speech, 
+                        especially those against students in STEM.  
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,65 @@
+#flicker {
+    animation: .3s shake infinite alternate;
+}
+
+@keyframes shake {
+    0% { transform: skewX(-15deg); }
+    5% { transform: skewX(15deg); }
+    10% { transform: skewX(-15deg); }
+    15% { transform: skewX(15deg); }
+    20% { transform: skewX(0deg); }
+    100% { transform: skewX(0deg); }  
+}
+
+#sub span {
+    display: inline-block;
+    text-align: left;
+    
+  }
+  #flicker {
+    overflow: hidden;
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+  }
+  /* line */
+  /*#flicker::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #aebcb9;
+  }*/
+  #sub b {
+    opacity: 0;
+    display: inline-block;
+    position: absolute;
+    white-space: nowrap;
+    left: 0;
+    top: 0;
+  }
+  #sub b.is-visible {
+    position: relative;
+    opacity: 1;
+    font-weight: 900;
+    color: white;
+    display: inline-block;
+    background-size: 120% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -ms-background-clip: text;
+    -ms-text-fill-color: transparent;
+    background-clip: text;
+
+    background-image:
+    linear-gradient(45deg,       
+        rgba(251, 202, 187, 0.9),
+        rgba(249, 176, 195, 0.9),
+        rgba(227, 171, 206, 0.9),
+        rgba(206, 182, 217, 0.9),
+        rgba(162, 200, 236, 0.9));
+  }
